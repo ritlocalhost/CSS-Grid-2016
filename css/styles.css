@@ -1,0 +1,165 @@
+body, h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+body{
+    background: #111111;
+    font-family: "Roboto", Helvetica, sans-serif;
+    margin-top: 2.5%;
+    overflow-x: hidden;
+    padding-bottom: 10%;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+.grid{
+    width: 100vw;
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: repeat(6, 16.6667vw);
+    grid-template-rows: repeat(4, 200px);
+}
+
+.inline-grid{
+    display: inline-grid;
+}
+
+.cell{
+    position: relative;
+}
+/*
+.cell:nth-child(odd){
+    background: saddlebrown;
+}
+*/
+.a{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: stretch;
+}
+
+.b{
+    grid-column: 4/7;
+    grid-row: 1/2;
+    align-self:  stretch;
+}
+.brand, .brand-name {
+    font-weight: bold;
+    font-size: 8rem;
+}
+
+.c{
+    grid-column: 1 / 4;
+    grid-row: 2 /  3;
+    align-self: stretch;
+}
+
+.d{
+    grid-column: 4/7;
+    grid-row: 2 /  3;
+    align-self: stretch;
+}
+
+.c p, .d p{
+    color: gray;
+    font-weight: 600;
+}
+.d ul, .c ul{
+    float: left;
+    width: 33.333%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: gray;
+    font-weight: 600;
+}
+
+.ep{
+    padding-top: 15%;
+    grid-column: 1/7;
+    grid-row: 3 /  4;
+    align-self: stretch;
+}
+
+.ep h1{
+    font-size: 8rem;
+    align-self: stretch;
+    line-height: 7rem;
+}
+
+.ep hr{
+    border-width: 4px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: white;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+}
+
+.about{
+    grid-column: 1/4;
+    grid-row: 5/6;
+    align-self: stretch;
+    padding-left: 40%;
+    padding-right: 2%;
+}
+
+.members{
+    grid-column: 4/7;
+    grid-row: 5/6;
+    align-self: stretch;
+    padding-left: 2%;
+    padding-right: 40%;
+}
+
+.members ul{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 50%;
+    list-style-type: none;
+}
+
+.about, .members{
+    font-weight: 500;
+}
+
+.brand-name{
+    font-size: 1rem;
+    margin-top: -20px;
+    margin-left: .65rem;
+
+}
+
+.brand-msg, #brand-src{
+    font-size: 1.25rem;
+}
+
+#brand-src{
+    display: block;
+    margin-right: 7%;
+    text-align: right;
+    color: gray;
+}
+
+.a, .c{
+    padding-left: 40%;
+    padding-right: 2%;
+}
+
+.b, .d{
+    padding-left: 2%;
+    padding-right: 40%;
+}
+
+.ep{
+    padding: 0 20% 0;
+}
+
